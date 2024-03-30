@@ -1,0 +1,6 @@
+﻿  Zegarmistrz.cpp
+C:\Users\PC\Desktop\Studia\Semestr 3\Notatki i zadania\Programowanie aplikacyjne\Projekt\Zegarmistrz\Zegarmistrz\Zegarmistrz.cpp(271,31): warning C4474: „printf”: przekazano za dużo argumentów dla ciągu formatowania
+C:\Users\PC\Desktop\Studia\Semestr 3\Notatki i zadania\Programowanie aplikacyjne\Projekt\Zegarmistrz\Zegarmistrz\Zegarmistrz.cpp(271,31): message : symbole zastępcze i ich parametry oczekują 0 argumentów ze zmienną liczbą argumentów, ale podano następującą liczbę zmiennych argumentów: 1
+C:\Users\PC\Desktop\Studia\Semestr 3\Notatki i zadania\Programowanie aplikacyjne\Projekt\Zegarmistrz\Zegarmistrz\Zegarmistrz.cpp(299,33): warning C4474: „printf”: przekazano za dużo argumentów dla ciągu formatowania
+C:\Users\PC\Desktop\Studia\Semestr 3\Notatki i zadania\Programowanie aplikacyjne\Projekt\Zegarmistrz\Zegarmistrz\Zegarmistrz.cpp(299,33): message : symbole zastępcze i ich parametry oczekują 0 argumentów ze zmienną liczbą argumentów, ale podano następującą liczbę zmiennych argumentów: 1
+  Zegarmistrz.vcxproj -> C:\Users\PC\Desktop\Studia\Semestr 3\Notatki i zadania\Programowanie aplikacyjne\Projekt\Zegarmistrz\x64\Debug\Zegarmistrz.exe
