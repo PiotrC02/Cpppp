@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7380267A-8B16-4656-976B-4243889B3F07}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kurczaczki</RootNamespace>
+    <AssemblyName>Kurczaczki</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MenuGry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuGry.Designer.cs">
+      <DependentUpon>MenuGry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjektGry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjektGry.Designer.cs">
+      <DependentUpon>ProjektGry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Elementy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MenuGry.resx">
+      <DependentUpon>MenuGry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjektGry.resx">
+      <DependentUpon>ProjektGry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bossRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chickenGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chickenParachute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chickenParachuteRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chickenRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egg_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eggBreak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eggBreak_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evilPlanet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fuel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\give.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goodPlanet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winSpace.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigEgg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d_heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Koniec.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ups.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chickenSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jajkoBreak.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jajkoSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laserGun.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statekHit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jakGrac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jakGrac1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jakGrac2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jakGrac3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intro.wmv" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intro.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Soundtrack.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
